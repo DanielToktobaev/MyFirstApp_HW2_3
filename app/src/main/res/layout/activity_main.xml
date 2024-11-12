@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_dark"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:src="@drawable/ic_arrowleft"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:background="null"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        android:textColor="@color/android"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    
+    <EditText
+        android:id="@+id/username"
+        android:background="@drawable/bg_et"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="100dp"
+        android:topLeftRadius="150dp"
+        android:topRightRadius="15dp"
+        android:hint="Введите никнейм: "
+    />
+
+    <EditText
+        android:id="@+id/email"
+        android:background="@color/polevvoda"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        android:layout_marginTop="5dp"
+        android:hint="Введите почту: "
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:background="@drawable/bg_et1"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        android:layout_marginTop="5dp"
+        android:hint="Введите пароль: "
+        />
+    
+    <Button
+        android:id="@+id/button"
+        android:backgroundTint="@color/white"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/android"
+        android:textSize="20dp"
+        android:text="Next"
+        />
+
+    <ImageView
+        android:id="@+id/arrowright"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_arrowright"
+        app:layout_constraintTop_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        android:layout_marginEnd="10dp"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/text"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/ic_tiposova"
+        />
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trivia"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintVertical_bias="0.90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
